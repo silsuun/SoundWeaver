@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  <!-- 보안 설정: 이 사이트 안의 파일과 글꼴(Google Fonts)만 불러오도록 제한합니다. 고치지 마세요. -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self'; media-src 'self'; connect-src 'none'; frame-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="format-detection" content="telephone=no">
+
+  <title>소리직녀 아카이브</title>
+  <meta name="description" content="길쌈 노동의 소리를 엮는 사운드 인스톨레이션 〈소리직녀〉의 사진과 소리 아카이브">
+
+  <!-- 카카오톡·SNS에 링크를 보낼 때 보이는 미리보기 -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="소리직녀 아카이브">
+  <meta property="og:description" content="정선삼베, 함창명주, 한산모시의 사진과 소리, 그리고 작품이 만들어진 과정">
+  <!-- 사이트를 올린 뒤, 아래 주소를 실제 주소로 바꾸면 미리보기 사진이 확실히 나옵니다.
+       예) https://아이디.github.io/sorijiknyeo/media/common/share.jpg -->
+  <meta property="og:image" content="media/common/share.jpg">
+
+  <meta name="theme-color" content="#f4f5f2" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#121517" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@400;600;700&family=IBM+Plex+Sans+KR:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="app.js" defer></script>
+  <script src="content.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">본문으로 건너뛰기</a>
+
+  <header class="bar">
+    <a class="bar-title" href="#top">소리직녀</a>
+    <span class="bar-where" id="bar-where" aria-hidden="true"></span>
+    <nav class="bar-nav" aria-label="섹션 바로가기"><ul id="nav"></ul></nav>
+    <button id="share" class="icon-btn" type="button" aria-label="이 페이지 주소 공유하기">
+      <svg viewBox="0 0 20 20" width="20" height="20" aria-hidden="true" focusable="false"><path d="M10 12.5V3M6.2 6.6 10 2.8l3.8 3.8M4 10v7h12v-7" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <button id="menu-open" class="menu-btn" type="button" aria-haspopup="dialog" aria-controls="menu">
+      <svg viewBox="0 0 20 20" width="20" height="20" aria-hidden="true" focusable="false"><path d="M3 5.5h14M3 10h14M3 14.5h14" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+      <span>목차</span>
+    </button>
+  </header>
+
+  <dialog id="menu" class="menu" aria-label="목차">
+    <div class="menu-head">
+      <span class="menu-title">목차</span>
+      <button id="menu-close" class="icon-btn" type="button" aria-label="목차 닫기">
+        <svg viewBox="0 0 20 20" width="20" height="20" aria-hidden="true" focusable="false"><path d="M5 5l10 10M15 5 5 15" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+    <nav aria-label="목차"><ul id="menu-list" class="menu-list"></ul></nav>
+  </dialog>
+
+  <main id="main" tabindex="-1">
+    <noscript><p class="notice">이 사이트는 자바스크립트를 켜야 내용이 보입니다.</p></noscript>
+  </main>
+
+  <footer id="footer" class="footer"></footer>
+
+  <a id="to-top" class="to-top-btn" href="#top" aria-label="맨 위로">
+    <svg viewBox="0 0 20 20" width="20" height="20" aria-hidden="true" focusable="false"><path d="M10 16V4M5 9l5-5 5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </a>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
