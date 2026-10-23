@@ -26,14 +26,14 @@ window.ARCHIVE = {
      --------------------------------------------------------------- */
   site: {
     title: "소리직녀",
-    subtitle: "길쌈 노동의 소리를 엮는 사운드 인스톨레이션",
+    subtitle: "전통 직조 문화 '길쌈'에 담긴 여성 노동에 주목하다.",
     artist: "이은선",
-    updated: "2026-10-19",          // 내용을 고칠 때마다 날짜를 바꿔 주세요
+    updated: "2026-10-23",          // 내용을 고칠 때마다 날짜를 바꿔 주세요
 
     // 첫 화면: 어두운 무대에 세로로 긴 직물 기둥이 걸려 있고, 만지면 빛납니다.
     stage: {
       count: 15,                     // 기둥 수 (설치의 오브제 수)
-      hint: "기둥을 만져 보세요",      // 처음에 보이는 안내
+      hint: "오브제를 만져 보세요",      // 처음에 보이는 안내
       litHint: "손을 떼면 4초 뒤 빛이 다시 낮아집니다",  // 하나라도 켜지면 바뀌는 안내
       allButton: "모두 켜 보기",        // 키보드·읽어 주기 사용자도 누를 수 있는 버튼
       holdSeconds: 4,                // 마지막 터치 후 빛을 유지하는 시간 (작품과 같은 4초)
@@ -42,8 +42,8 @@ window.ARCHIVE = {
 
     // 작품 섹션 다음, 아카이브가 시작되는 곳의 제목과 소개
     archiveTitle: "아카이브",
-    intro: "〈소리직녀〉를 만들며 정선, 함창, 한산의 길쌈 마을에서 모은 사진과 소리, 전통 길쌈의 과정, 그리고 작품이 만들어진 과정을 모았습니다.",
-    placesTitle: "세 곳의 길쌈 마을",  // 장소 카드 위의 제목 (장소 수가 바뀌면 같이 고쳐 주세요)
+    intro: "〈소리직녀〉를 제작하며 정선, 함창, 한산의 기관에서 수집한 사진과 소리, 전통 길쌈의 과정, 그리고 작품이 만들어진 과정을 모았습니다.",
+    placesTitle: "재료와 소리를 수집한 세 곳",  // 장소 카드 위의 제목 (장소 수가 바뀌면 같이 고쳐 주세요)
   },
 
 
@@ -90,10 +90,10 @@ window.ARCHIVE = {
                 intro: "함께해 주신 기관과 개인이 공개한 소리 기록입니다. 소리가 원래 있는 곳에서 들을 수 있도록 링크로 연결했습니다." },
     weaving:  { nav: "전통 길쌈",       title: "전통 길쌈 방식",      summary: "삼베, 명주, 모시, 무명이 만들어지는 과정",
                 intro: "길쌈은 실을 만드는 일과 그 실로 베를 짜는 일을 함께 이르는 말입니다. 네 옷감은 실을 얻는 재료와 방법이 다르지만, 실이 만들어진 뒤 날고 매고 짜는 과정은 같습니다." },
-    process:  { nav: "제작 과정",       title: "제작 과정",           summary: "조형물과 설치가 만들어진 기록",
+    process:  { nav: "제작 과정",       title: "제작 과정",           summary: "작품이 만들어지기까지의 기록",
                 intro: "조형물과 설치가 만들어진 과정을 기록합니다." },
-    system:   { nav: "사운드 시스템",   title: "컴퓨팅 사운드 시스템", summary: "만지면 소리가 깨어나는 시스템을 만든 과정",
-                intro: "오브제를 만지면 소리가 깨어나 합창이 되기까지, 그 시스템을 만든 과정입니다." },
+    system:   { nav: "사운드 시스템",   title: "컴퓨팅 사운드 시스템", summary: "오브제를 터치하면 활성화되는 사운드 시스템을 만든 과정",
+                intro: "오브제를 만지면 쌓이는 사운드 레이어를 믹싱하는 컴퓨팅 시스템을 만든 과정입니다." },
     credits:  { nav: "출처",            title: "출처와 함께한 사람들", summary: "함께한 사람들과 참고한 자료",
                 intro: "이 아카이브와 작품에 함께해 주신 분들과 자료의 출처입니다." },
   },
@@ -124,11 +124,11 @@ window.ARCHIVE = {
       region: "강원 정선",
       fiber: "삼베",
       color: "hemp",
-      text: "(예시) 정선에서 만난 삼베 길쌈과 베틀노래에 관한 이야기를 적어 주세요. 언제 찾아갔는지, 누구를 만났는지, 어떤 소리를 들었는지 적으면 좋습니다.",
+      text: "정선유평삼베민족보존회와 정선문화원에 방문하여 삼베짜기 시연,삼베가 되기까지의 과정에 있는 재료들을 만나보며 함께 교류할 수 있었습니다. ",
       photos: [
-        { src: "media/jeongseon/example-1.jpg", alt: "예시 이미지", caption: "(예시) 이 사진을 실제 사진으로 바꾸세요", credit: "사진: 이은선" },
-        { src: "media/jeongseon/example-2.jpg", alt: "예시 이미지", caption: "(예시) 베틀 앞", credit: "사진: 이은선" },
-        { src: "media/jeongseon/example-3.jpg", alt: "예시 이미지", caption: "(예시) 삼 삼기", credit: "사진: 이은선" },
+        { src: "media/jeongseon/example-1.jpg", alt: "예시 이미지", caption: "삼베짜기 시연 ", credit: "사진: 김예은" },
+        { src: "media/jeongseon/example-2.jpg", alt: "예시 이미지", caption: "여러 재료들(왼쪽부터)", credit: "사진: 이은선" },
+        { src: "media/jeongseon/example-3.jpg", alt: "예시 이미지", caption: "정선문화원 ", credit: "사진: 이은선" },
       ],
       sounds: [
         { src: "media/jeongseon/example-sound.mp3", title: "(예시) 시험용 소리", date: "2026.08", where: "정선", note: "이 소리 파일을 실제 녹음으로 바꾸세요.", credit: "녹음: 이은선" },
@@ -140,10 +140,10 @@ window.ARCHIVE = {
       region: "경북 상주 함창",
       fiber: "명주",
       color: "silk",
-      text: "(예시) 함창에서 만난 명주 길쌈에 관한 이야기를 적어 주세요.",
+      text: "함창명주박물관에 방문하여, 관리소장님과 대화로 명주의 역사와, 종류, 전통 길쌈방식과 그 재료들에 대해 알 수 있었습니다. ",
       photos: [
-        { src: "media/hamchang/example-1.jpg", alt: "예시 이미지", caption: "(예시) 누에고치", credit: "사진: 이은선" },
-        { src: "media/hamchang/example-2.jpg", alt: "예시 이미지", caption: "(예시) 실켜기", credit: "사진: 이은선" },
+        { src: "media/hamchang/example-1.jpg", alt: "예시 이미지", caption: "여러 종류의 함창 명주", credit: "사진: 이은선" },
+        { src: "media/hamchang/example-2.jpg", alt: "예시 이미지", caption: "명주실", credit: "사진: 이은선" },
       ],
       sounds: [
         { src: "media/hamchang/example-sound.mp3", title: "(예시) 시험용 소리", date: "2026.08", where: "함창", note: "", credit: "녹음: 이은선" },
@@ -155,13 +155,13 @@ window.ARCHIVE = {
       region: "충남 서천 한산",
       fiber: "모시",
       color: "ramie",
-      text: "(예시) 한산에서 만난 모시 길쌈에 관한 이야기를 적어 주세요.",
+      text: "한산모시관에 방문하여, 소속 장인과의 대화로 여성과 베짜기에 대한 이야기를 나눌 수 있었습니다. ",
       photos: [
-        { src: "media/hansan/example-1.jpg", alt: "예시 이미지", caption: "(예시) 모시 째기", credit: "사진: 이은선" },
-        { src: "media/hansan/example-2.jpg", alt: "예시 이미지", caption: "(예시) 모시 매기", credit: "사진: 이은선" },
+        { src: "media/hansan/example-1.jpg", alt: "예시 이미지", caption: "모시 짜기 시연", credit: "사진: 이은선" },
+        { src: "media/hansan/example-2.jpg", alt: "예시 이미지", caption: "모시(중품)", credit: "사진: 이은선" },
       ],
       sounds: [
-        { src: "media/hansan/example-sound.mp3", title: "(예시) 시험용 소리", date: "2026.08", where: "한산", note: "", credit: "녹음: 이은선" },
+        { src: "media/hansan/example-sound.mp3", title: "test", date: "2026.08", where: "한산", note: "", credit: "녹음: 이은선" },
       ],
     },
   ],
@@ -369,7 +369,7 @@ window.ARCHIVE = {
   process: [
     {
       date: "2026.07",
-      title: "(예시) 리서치와 현장 방문",
+      title: "리서치와 현장 방문",
       text: "길쌈 마을을 찾아가 장인을 만나고, 베틀과 작업 과정을 기록했습니다.",
       media: [
         { type: "image", src: "media/process/example-1.jpg", alt: "예시 이미지", caption: "(예시) 현장 기록" },
